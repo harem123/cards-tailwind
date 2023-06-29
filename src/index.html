@@ -8,8 +8,8 @@
 </head>
 
 <body class="text-gray-600">
-    <div> <!-- content wrapper -->
-        <div>
+    <div class="grid md:grid-cols-3"> <!-- content wrapper -->
+        <div class="md:col-span-1">
             <nav>
                 <div>
                     <h1 class="font-bold uppercase p-4 border-b border-gray-100">
@@ -38,10 +38,10 @@
                 </ul>
             </nav>
         </div>
-        <main class="px-16 py-6 bg-gray-50">
+        <main class="px-16 py-6 bg-gray-50 md:col-span-2">
             <div class="flex md:justify-end">
-                <a href="#" class="text-primary"> Log in</a>
-                <a href="#" class="ml-2">Sign Up</a>
+                <a href="#" class=" btn border-primary md:border-2 text-primary hover:bg-primary hover:text-white"> Log in</a>
+                <a href="#" class=" btn md:border-2 ml-2 hover:bg-gray-400 hover:text-white">Sign Up</a>
             </div>
 
             <header>
@@ -50,7 +50,7 @@
             </header>
             <div>
                 <h4 class="font-bold pb-2 mt-12 border-b border-gray-200">Latest Recipes</h4>
-                <div class="mt-8 grid lg:grid-cols-3 gap-10">
+                <div class="mt-8 grid md:grid-cols-2 lg:grid-cols-3 gap-10">
                     <!-- cards go here -->
                     <div class="card">
                         <img src="images/stew.jpg" alt="stew" class="h-32 sm:h-48 w-full object-cover">
@@ -59,10 +59,14 @@
                             <span class="block text-gray-500 text-sm">Recipe by Mario</span>
                         </div>
                         <div class="badge">
+                            <svg class="w-5 inline-block" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M12 6v6h4.5m4.5 0a9 9 0 11-18 0 9 9 0 0118 0z" />
+                              </svg>
                             <span>25 mins</span>
                         </div>
                     </div>
-                     <!-- cards go here -->
+                     <!-- cards go here --> 
+
                      <div class="card">
                         <img src="images/noodles.jpg" alt="stew" class="h-32 sm:h-48 w-full object-cover">
                         <div class="m-4">
@@ -89,8 +93,8 @@
                 <div class="mt-8">
                     <!-- cards go here -->
                   </div>
-                  <div class="mt-12">
-                    <div>Load more</div>
+                  <div class="mt-12 flex justify-center">
+                    <div class="btn bg-secondary-100 uppercase rounded-full hover:shadow-md">Load more</div>
                   </div> 
             </div>
         </main>
